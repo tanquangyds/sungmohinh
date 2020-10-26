@@ -1,0 +1,84 @@
+:root {
+  --text-color: #666;
+  --primary-color: white;
+  --border-color: #dbdbdb;
+  --header-height: 100px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.just-center {
+  justify-content: center;
+}
+.just-space-between {
+  justify-content: space-between;
+}
+.align-item-center {
+  align-items: center;
+}
+/* Button Style */
+.btn {
+  min-width: 120px;
+  height: 34px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6rem;
+  background-color: var(--white-color);
+}
+
+.btn.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btn.btn--disable {
+  color: #666;
+  background-color: #888;
+  cursor: default;
+}
+
+.btn.btn--size-s {
+  height: 30px;
+  font-size: 1.2rem;
+  padding: 0 8px;
+}
